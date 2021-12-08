@@ -1,0 +1,22 @@
+{
+  "name": "tarea-clase-5",
+  "version": "1.0.0",
+  "description": "Tarea de la clase 5 para r/argentina programa!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juni-p/tarea-clase-5.git"
+  },
+  "author": "Junior Vitteri <vitteri81@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Juni-p/tarea-clase-5/issues"
+  },
+  "homepage": "https://github.com/Juni-p/tarea-clase-5#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

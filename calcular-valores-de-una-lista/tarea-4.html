@@ -2,40 +2,44 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calcular valores</title>
-    <link rel="stylesheet" href="tarea4.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calcular valores</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body>
+  <div class="container vh-100 d-flex flex-column justify-content-center">
     <header>
-        <h1>calcular valores</h1>
+      <h1>calcular valores</h1>
     </header>
     <main>
-        <form onsubmit="return false">
-            <div>
-                <ol>
-                    <li><input type="number" id="numero"></li>
-                    <li><input type="number" id="numero"></li>
-                    <li><input type="number" id="numero"></li>
-                    <li><input type="number" id="numero"></li>
-                    <li><input type="number" id="numero"></li>
-                </ol>
-            </div>
-            <div>
-                <em id="promedio"></em>
-                <em id="numMasPequenio"></em>
-                <em id="numMasGrande"></em>
-                <em id="numMasRepetido"></em>
-            </div>
-            <input type="submit" value="Calcular" id="calcular" />
-            <input type="reset" value="Limpiar" id="limpiar" />
-        </form>
-        <button class="volver"><a href="../index.html">volver</a></button>
+      <form onsubmit="return false">
+        <div>
+          <ol>
+            <li><input class="form-control form-control-sm mb-1" type="number" id="numero"></li>
+            <li><input class="form-control form-control-sm mb-1" type="number" id="numero"></li>
+            <li><input class="form-control form-control-sm mb-1" type="number" id="numero"></li>
+            <li><input class="form-control form-control-sm mb-1" type="number" id="numero"></li>
+            <li><input class="form-control form-control-sm mb-1" type="number" id="numero"></li>
+          </ol>
+        </div>
+        <div class="resultado">
+          <em id="promedio"></em>
+          <em id="numMasPequenio"></em>
+          <em id="numMasGrande"></em>
+          <em id="numMasRepetido"></em>
+        </div>
+        <div class="mb-3">
+          <input class="btn btn-primary" type="submit" value="Calcular" id="calcular" />
+          <input class="btn btn-secondary" type="reset" value="Limpiar" id="limpiar" />
+        </div>
+      </form>
+      <a class=" btn btn-outline-dark btn-sm" href="../index.html">volver</a>
     </main>
+  </div>
 
-    <script src="tarea-4.js"></script>
+  <script src="tarea-4.js"></script>
 </body>
 
 </html>

@@ -1,23 +1,27 @@
-const $ingresarDatos = document.querySelector( '#ingresar' ) 
-const $limpiarDatos = document.querySelector( '#limpiar' )
+const $ingresarDatos = document.querySelector("#ingresar");
+const $limpiarDatos = document.querySelector("#limpiar");
+const $datosUsuario = document.querySelector("#resultado");
 
-$ingresarDatos.onclick = function() {
-    const nombreUsuario = document.querySelector( '#nombre-usuario' ).value
-    const edadUsuario = document.querySelector( '#edad-usuario' ).value
+$ingresarDatos.onclick = function () {
+  const nombreUsuario = document.querySelector("#nombre-usuario").value;
+  const edadUsuario = document.querySelector("#edad-usuario").value;
 
-    saludarUsuario( nombreUsuario )
-    mostrarDatosUsuario( nombreUsuario, edadUsuario )
+  saludarUsuario(nombreUsuario);
+  mostrarDatosUsuario(nombreUsuario, edadUsuario);
+};
 
+function saludarUsuario(nombre) {
+  return (document.querySelector("h1").innerHTML = `Bienvenido, ${nombre}.`);
 }
 
-function saludarUsuario( nombre ) {
-    return document.querySelector( 'h1' ).innerHTML = `Bienvenido, ${nombre}.`
+function mostrarDatosUsuario(nombre, edad) {
+  $datosUsuario.classList.add("alert");
+  $datosUsuario.classList.add("alert-info");
+  return ($datosUsuario.innerHTML = `nombre: ${nombre}<br>edad: ${edad}`);
 }
 
-function mostrarDatosUsuario( nombre, edad ) {
-    return document.querySelector( '#resultado' ).innerHTML = `nombre: ${nombre}<br>edad: ${edad}`
-}
-
-$limpiarDatos.onclick = function() {
-    document.querySelector( '#resultado' ).innerHTML = ''
-}
+$limpiarDatos.onclick = function () {
+  $datosUsuario.classList.remove("alert");
+  $datosUsuario.classList.remove("alert-info");
+  document.querySelector("#resultado").innerHTML = "";
+};

@@ -2,43 +2,48 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcular duracion de videos</title>
-    <link rel="stylesheet" href="tarea3.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcular duracion de videos</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body>
+  <div class="container vh-100 d-flex flex-column justify-content-center">
+
     <header>
-        <h1>calcule la duracion de los videos</h1>
+      <h1>calcule la duracion de los videos</h1>
     </header>
     <main>
-        <form onsubmit="return false">
-            <div>
-                <input type="number" placeholder="horas:" id="horas">
-                <input type="number" placeholder="minutos:" id="minutos">
-                <input type="number" placeholder="segundos:" id="segundos">
-            </div>
-            <div>
-                <input type="number" placeholder="horas:" id="horas">
-                <input type="number" placeholder="minutos:" id="minutos">
-                <input type="number" placeholder="segundos:" id="segundos">
-            </div>
-            <div>
-                <input type="number" placeholder="horas:" id="horas">
-                <input type="number" placeholder="minutos:" id="minutos">
-                <input type="number" placeholder="segundos:" id="segundos">
-            </div>
-            <div>
-                <strong id="tiempoTotal"></strong>
-            </div>
-            <input type="submit" value="calcular" id="calcular">
-            <input type="reset" value="limpiar" id="limpiar">
-        </form>
-        <button class="volver"><a href="../index.html">volver</a></button>
+      <form onsubmit="return false">
+        <div class="row mb-1">
+          <input class="col form-control" type="number" placeholder="horas:" id="horas">
+          <input class="col form-control" type="number" placeholder="minutos:" id="minutos">
+          <input class="col form-control" type="number" placeholder="segundos:" id="segundos">
+        </div>
+        <div class="row mb-1">
+          <input class="col form-control" type="number" placeholder="horas:" id="horas">
+          <input class="col form-control" type="number" placeholder="minutos:" id="minutos">
+          <input class="col form-control" type="number" placeholder="segundos:" id="segundos">
+        </div>
+        <div class="row mb-2">
+          <input class="col form-control" type="number" placeholder="horas:" id="horas">
+          <input class="col form-control" type="number" placeholder="minutos:" id="minutos">
+          <input class="col form-control" type="number" placeholder="segundos:" id="segundos">
+        </div>
+        <div class="duracion">
+          <strong id="tiempoTotal"></strong>
+        </div>
+        <div class="row mb-3">
+          <input class="col btn btn-primary btn-sm" type="submit" value="calcular" id="calcular">
+          <input class="col btn btn-secondary btn-sm" type="reset" value="limpiar" id="limpiar">
+        </div>
+      </form>
+      <a class="btn btn-outline-dark btn-sm" href="../index.html">volver</a>
     </main>
+  </div>
 
-    <script src="tarea-3.js"></script>
+  <script src="tarea-3.js"></script>
 </body>
 
 </html>

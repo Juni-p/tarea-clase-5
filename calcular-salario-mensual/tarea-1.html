@@ -2,29 +2,37 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calcular salario mensual</title>
-    <link rel="stylesheet" href="tarea1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calcular salario mensual</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body>
+  <div class="container vh-100 d-flex flex-column justify-content-center">
     <header>
-        <h1>Calcule su salario mensual</h1>
+      <h1>Calcule su salario mensual</h1>
     </header>
     <main>
-        <form>
-            <label for="salario-anual">salario anual:</label>
-            <input type="number" placeholder="Ingrese su salario anual..." id="salario-anual">
-            <label for="salario-mensual">salario mensual:</label>
-            <input type="number" disabled id="salario-mensual">
-            <button type="button" id="btn-calcular">calcular</button>
-            <button type="reset" id="btn-limpiar">limpiar</button>
-        </form>
-        <button class="volver"><a href="../index.html">volver</a></button>
+      <form>
+        <div class="mb-3">
+          <label for="salario-anual">salario anual:</label>
+          <input class="form-control" type="number" placeholder="Ingrese su salario anual..." id="salario-anual">
+        </div>
+        <div class="mb-3">
+          <label for="salario-mensual">salario mensual:</label>
+          <input class="form-control" type="number" disabled id="salario-mensual">
+        </div>
+        <div class="mb-5">
+          <button type="button" class="btn btn-primary" id="btn-calcular">calcular</button>
+          <button type="reset" class="btn btn-secondary" id="btn-limpiar">limpiar</button>
+        </div>
+      </form>
+      <a class="btn btn-outline-dark btn-sm" href="../index.html">volver</a>
     </main>
+  </div>
 
-    <script src="tarea-1.js"></script>
+  <script src="./tarea-1.js"></script>
 </body>
 
 </html>
